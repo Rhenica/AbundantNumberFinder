@@ -6,13 +6,13 @@ int maxDivisors = 0;
 long abundantNumber = 0;
 
 int getDivisors(long n) {
-    int divisors = 20;
-    for (long l = 12; l <= n/10; l++) if (n % l == 0) divisors++;
+    int divisors = 19;
+    for (long l = 11; l <= n/10; l++) if (n % l == 0) divisors++;
     return divisors;
 }
 
 int main() {
-    for (long l = 720720; l < 100000000; l += 720720) {
+    for (long l = 1441440; l < 100000000; l += 1441440) {
         const int divisors = getDivisors(l);
         if (divisors > current/3) {
             current++;
