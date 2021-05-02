@@ -12,7 +12,7 @@ int getDivisors(long n) {
 }
 
 int main() {
-    for (long l = 50400; l < 10000000; l += 50400) {
+    for (long l = 55440; l < 10000000; l += 55440) {
         const int divisors = getDivisors(l);
         if (divisors > current/3) {
             current++;
