@@ -12,7 +12,7 @@ int getDivisors(long n) {
 }
 
 int main() {
-    for (long l = 55440; l < 10000000; l += 55440) {
+    for (long l = 720720; l < 100000000; l += 720720) {
         const int divisors = getDivisors(l);
         if (divisors > current/3) {
             current++;
@@ -23,6 +23,6 @@ int main() {
             }
         }
     }
-    printf("%ld has the most divisors out of all numbers between 0 and 10000000 (%d divisors)\n", abundantNumber, maxDivisors);
+    printf("%ld has the most divisors out of all numbers between 0 and 100000000 (%d divisors)\n", abundantNumber, maxDivisors);
     return 0;
 }
