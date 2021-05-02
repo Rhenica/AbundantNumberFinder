@@ -3,7 +3,7 @@
 
 int current = 0;
 int maxDivisors = 0;
-long antiPrime = 0;
+long abundantNumber = 0;
 
 int getDivisors(long n) {
     int divisors = 12;
@@ -18,7 +18,7 @@ int main() {
             current++;
             printf("anti-prime number found: %ld (%d divisors)\n", l, divisors);
             if (divisors > maxDivisors) {
-                antiPrime = l;
+                abundantNumber = l;
                 maxDivisors = divisors;
             }
         }
