@@ -16,7 +16,7 @@ int main() {
         const int divisors = getDivisors(l);
         if (divisors > current/3) {
             current++;
-            printf("anti-prime number found: %ld (%d divisors)\n", l, divisors);
+            printf("abundant number found: %ld (%d divisors)\n", l, divisors);
             if (divisors > maxDivisors) {
                 abundantNumber = l;
                 maxDivisors = divisors;
