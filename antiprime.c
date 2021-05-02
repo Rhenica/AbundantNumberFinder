@@ -12,6 +12,7 @@ int getDivisors(int n) {
     if (n % 192 != 0) return 0;
     if (n % 160 != 0) return 0;
     if (n % 320 != 0) return 0;
+    if (n % 480 != 0) return 0;
     if (n % 960 != 0) return 0;
     int divisors = 6;
     for (int i = 6; i <= n/2; i++) if (n % i == 0) divisors++;
